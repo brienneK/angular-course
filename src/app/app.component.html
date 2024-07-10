@@ -225,8 +225,10 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title }}</h1>
+      <h1>Hello, {{ data.title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <img width="300" (click)="onLogoClicked()" alt="fabricadabra logo" src="../images/fabricadabra.png">
+      <input class="demo" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">

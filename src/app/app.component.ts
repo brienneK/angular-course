@@ -9,5 +9,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-course';
+  data = {
+    title: 'Fabricadabra'
+  };
+
+  onLogoClicked() {
+    alert('Hello fellow fabric horder!');
+  }
+
+  onKeyUp(newTitle:string) {
+    this.data.title = newTitle;
+  }
 }
